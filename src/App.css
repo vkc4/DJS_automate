@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  display: flex;
+  width: 400px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(49, 44, 44, 0.853);
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0e0ecf;
+  color: black;
+}
+
+.slider {
+  width: 150px;
+  transform: rotate(270deg);
+}
+
+.top-left, .bottom-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  margin: 5px;
+  background-color: gray;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* border: 3px solid aqua; */
+}
+
+button:hover {
+  background-color: black;
+}
+
+button:focus {
+  outline: none;
+}
+
+.top-left.active button {
+  background-color: aqua;
+  transform: scale(0.9);
+  fill: #333333;
+}
+
+.bottom-left.active button {
+  background-color: black;
+  
+}
